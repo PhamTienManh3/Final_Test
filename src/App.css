@@ -25,11 +25,12 @@ h1 {
   text-align: center;
   margin-bottom: 20px;
   color: #333;
+  font-weight: 700;
 }
 
 .tab-switcher {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   border-bottom: 1px solid #ddd;
   margin-bottom: 20px;
 }
@@ -45,7 +46,7 @@ h1 {
 }
 
 .tab-button.active {
-  font-weight: bold;
+  /* font-weight: bold; */
   color: black;
 }
 
@@ -90,6 +91,7 @@ h1 {
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
+  width: 90px;
 }
 
 .add-task-form button:hover {
@@ -118,11 +120,21 @@ h1 {
   margin-left: 0;
   margin-right: 10px;
 
+}
 
-  .task-list-item.completed label {
+.completed {
+  text-decoration: line-through;
+  color: #5010b7;
+}
+
+.completed2 {
+  display: flex;
+  justify-content: space-between;
+}
+  /* .task-list-item label {
     text-decoration: line-through;
-    color: #888;
-  }
+    color: #5010b7;
+  } */
 
 /* .span-complete {
   text-decoration: line-through;
@@ -156,6 +168,7 @@ h1 {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 20px;
+  /* margin-right: 0px; */
 }
 
 .delete-all-button:hover {

@@ -4,6 +4,7 @@ import Header from "./Header";
 import All from "./All";
 import Active from "./Active";
 import Completed from "./Completed";
+import { FaRegTrashAlt } from "react-icons/fa";
 
 const TodoApp = () => {
   const [todoArr, setTodoArr] = useState([]);
@@ -87,9 +88,12 @@ const TodoApp = () => {
       )}
 
       {currentTab === "Completed" && todoArr.some((todo) => todo.completed) && (
-        <button onClick={deleteAllCompletedTasks} className="delete-all-button">
+        <div className="d-flex justify-content-end"> 
+          <button onClick={deleteAllCompletedTasks} className="delete-all-button">
+          <FaRegTrashAlt/>
           Delete all
         </button>
+        </div>
       )}
     </div>
   );
